@@ -149,28 +149,30 @@ body {
 /* About-us */
 
 .about-us {
+    /* margin-top: 50px; */
+    margin-bottom: 50px;
+}
+/* Title */
+.title{
+    text-align: center;
     margin-top: 50px;
 }
 
-.text {
-    text-align: center;
-}
-
-.text p:first-child {
+.title p:first-child {
     font-family: 'Kaushan Script';
 }
 
-.text p:nth-child(2) {
+.title p:nth-child(2) {
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-.text .underline {
+.title .underline {
     border-top: 2px solid #ea7479;
 }
 
-.text :nth-child(4) {
+.title :nth-child(4) {
     margin: 30px 70px 60px;
     color: #AFAFAF;
     font-size: 10px;
@@ -201,7 +203,7 @@ img{
     color:#fff;
     font-weight: 600;
     transition: 400ms ease-out;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 .card i{
     display: flex;
@@ -221,11 +223,72 @@ img{
     visibility: hidden;
     transition: 400ms ease-out;
 }
-.card:hover>*{
+.card:hover img{
     transform: translate(-10px,-10px);
+}
+.card:hover .team{
+    transform: translate( -58.8%,-69%);
     visibility: visible;
 }
 .card:hover::before{
     transform: translate(-10px,-10px);
     visibility: visible;
+}
+
+/* Fact */
+
+.fact{
+    background-color:#95e1d3;
+}
+.fact-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    color: #fff;
+}
+.fact-item span{
+    font-size: 56px;
+    font-weight: bold;
+}
+.fact-item p{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #D8F7F0;
+}
+/* Services */
+
+.services-row{
+    display: flex;
+}
+.services-item{
+    flex-basis: 33.33%;
+    display: flex;
+    align-items: flex-start;
+}
+.services .services-row:nth-child(2) {
+border-bottom: 1px solid #ECF1F9;
+padding: 20px 0;
+} 
+.services .services-row:nth-child(3) {
+    padding: 30px 0;
+    } 
+
+.services-item p{
+    color:#A9A9A9;
+}
+.services-item p:nth-child(1){
+    font-size: 14px;
+    text-transform: uppercase;
+    color:grey;
+    font-weight: 500;
+}
+.services-item p:nth-child(2){
+    font-size: 10px;
+}
+.services-item i{
+    font-size: 32px;
+    color:#95e1d3;
+    margin: 10px 20px;
 }
