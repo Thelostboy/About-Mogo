@@ -5,7 +5,12 @@ body {
 .container-fluid {
     padding: 0 !important;
 }
-
+ul{
+    list-style: none;
+}
+.small-text{
+    color: #A9A9A9;
+}
 /* Banner-overlay */
 
 .banner {
@@ -169,6 +174,7 @@ body {
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .title .underline {
@@ -183,7 +189,7 @@ body {
 
 /* Pictures */
 
-.picture-about {
+.picture {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
@@ -199,7 +205,7 @@ body {
     background: #8AE8D4;
 }
 
-.card .team {
+.card .label {
     position: absolute;
     z-index: 2;
     top: 50%;
@@ -236,7 +242,7 @@ body {
     transform: translate(-10px, -10px);
 }
 
-.card:hover .team {
+.card:hover .label {
     transform: translate( -58%, -68%);
     visibility: visible;
 }
@@ -293,9 +299,9 @@ body {
     padding: 30px 0;
 }
 
-.services-item p {
+/* .services-item p {
     color: #A9A9A9;
-}
+} */
 
 .services-item p:nth-child(1) {
     font-size: 14px;
@@ -347,3 +353,93 @@ body {
     top: 55%;
     left: 54%;
 }
+/* Service-2 */
+
+.services-2 .services-2-list {
+    height: 227px;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr 1fr;
+    grid-gap: 5px;  
+    color:rgb(128, 119, 119);
+}
+.services-2-item {
+    border: 1px solid rgb(218, 212, 212);
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+.lorem{
+    overflow: scroll;
+    border: 1px solid rgb(219, 212, 212);
+    color: rgb(168, 161, 161);
+}
+.services-2-item p{
+    padding: 0;
+    margin: 5px 0;
+    text-transform: uppercase;
+    /* line-height: 20px; */
+}
+.services-2 .services-2-list .services-2-item i:nth-child(1){
+    float: left !important;
+    color:#95e1d3 !important;
+    font-size: 28px;
+}
+.services-2 .services-2-list .services-2-item i:nth-child(3){
+    color:#8AE8D4;
+    font-size: 24px;
+}
+/* Quote */
+
+.quote{
+    margin-top: 50px;
+    height: 179px;
+    background-color: #F8F8F8;
+}
+.quote-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.quote-content i{
+    width: 10%;
+    text-align: center;
+    margin: auto 0;
+    padding: 80px 0;
+}
+.quote-item{
+    /* padding: 30px 30px; */
+    margin: 41px 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.quote .underline{
+    border-top: 2px solid #ea7479;
+    margin-bottom: 2px;
+    display: inline-block;
+}
+.content-left p:nth-child(3){
+    font-family: 'Kaushan Script', serif;
+    display: inline;
+}
+.content-left .small-text{
+    font-size: 12px;    
+}
+/* Team */
+
+.our-team .info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 15px 0 50px;
+}
+.info .player p{
+    text-align: center;
+}
+.info .player p:nth-child(1){
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.info .player p:nth-child(2){
+    font-size: 12px;
+    color:#A9A9A9;
+}
+/* Logo Group */
+
