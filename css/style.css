@@ -113,6 +113,13 @@ ul{
 .underline {
     width: 60px;
     border-top: 2px solid #fff;
+    /* display: inline-block; */
+}
+.underline-color{
+    width: 60px;
+    border-top: 2px solid #ea7479;
+    display: inline-block;
+    margin: 10px 0;
 }
 
 /* Input */
@@ -164,6 +171,7 @@ ul{
     position: relative;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .title p:first-child {
@@ -177,9 +185,6 @@ ul{
     text-transform: uppercase;
 }
 
-.title .underline {
-    border-top: 2px solid #ea7479;
-}
 
 .title :nth-child(4) {
     margin: 30px 70px 60px;
@@ -281,22 +286,17 @@ ul{
 /* Services */
 
 .services-row {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 
-.services-item {
-    flex-basis: 33.33%;
-    display: flex;
-    align-items: flex-start;
-}
 
 .services .services-row:nth-child(2) {
     border-bottom: 1px solid #ECF1F9;
-    padding: 20px 0;
 }
 
 .services .services-row:nth-child(3) {
-    padding: 30px 0;
+    padding: 30px 0 50px;
 }
 
 /* .services-item p {
@@ -415,11 +415,6 @@ ul{
     display: grid;
     grid-template-columns: 1fr 6fr;
 }
-.quote-content .underline{
-    border-top: 2px solid #ea7479;
-    margin-bottom: 2px;
-    display: inline-block;
-}
 .content-left{
     margin: auto 0;
     padding-left: 20px;
@@ -485,4 +480,45 @@ ul{
 /* Testimonial */
 .testimonial{
     margin: 20px 0;
+}
+/* People say */
+.people-say{
+    background-image: url(../images/bg-people-say.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 570px;
+    position: relative;
+}
+.people-say::before{
+    content:' ';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .8)
+}
+.people{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-bottom: 50px;
+    grid-gap: 20px;
+}
+.people img{
+    width: 100%;
+}
+.people .say p{
+    color: #9B9B9B;
+}
+.people .say p:nth-child(1){
+    color: #929292;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.people .say p:nth-child(2){
+    font-style: italic;
+}
+.people .say p:nth-child(4){
+    font-size: 12px;
 }
