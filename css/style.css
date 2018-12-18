@@ -413,12 +413,16 @@ ul{
     /* padding: 30px 30px; */
     margin: 41px 10px;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 6fr;
 }
-.quote .underline{
+.quote-content .underline{
     border-top: 2px solid #ea7479;
     margin-bottom: 2px;
     display: inline-block;
+}
+.content-left{
+    margin: auto 0;
+    padding-left: 20px;
 }
 .content-left p:nth-child(3){
     font-family: 'Kaushan Script', serif;
@@ -460,4 +464,25 @@ ul{
     background-color: #F87376;
 }
 /* Logo Group */
+.logo-group{
+    background-color:#F8F8F8;
+}
+.logo-group-list{
+    /* display: grid;
+    grid-template-columns: repeat(6, 1fr); */
+    background-image: url(../images/logo-group.png);
+    height: 172px;
+    background-repeat: no-repeat;
+}
 
+/* Work */
+.work, .work-pic{
+    padding: 0 !important;
+}
+.work-pic img{
+    width: 100%;
+}
+/* Testimonial */
+.testimonial{
+    margin: 20px 0;
+}
