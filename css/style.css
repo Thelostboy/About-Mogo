@@ -132,11 +132,11 @@ a:hover{
     margin: 10px 0;
 }
 
-/* Input */
+/* Lear more */
 
-.banner .content input {
-    display: flex;
-    margin: 0 auto;
+.banner .content a {
+    display: block;
+    margin: 0 350px;
     border: 2px solid #fff;
     background-color: transparent;
     color: #fff;
@@ -146,6 +146,11 @@ a:hover{
     font-size: 12px;
     margin-top: 30px;
     margin-bottom: 90px;
+}
+.content a:hover{
+    color: #764248;
+    background-color: #d1ca98;
+    border-color: #d1ca98;
 }
 
 /* Slide */
@@ -366,10 +371,10 @@ a:hover{
 /* Service-2 */
 
 .services-2 .services-2-list {
-    height: 227px;
+    /* height: 227px;
     display: grid;
     grid-template-rows: 1fr 4fr 1fr 1fr;
-    grid-gap: 5px;  
+    grid-gap: 5px;   */
     color:rgb(128, 119, 119);
 }
 .services-2-item {
@@ -377,10 +382,14 @@ a:hover{
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
 }
+.services-2-item:focus +.lorem{
+    display: block;
+}
 .lorem{
     overflow: scroll;
     border: 1px solid rgb(219, 212, 212);
     color: rgb(168, 161, 161);
+    display: none;
 }
 .services-2-item p{
     padding: 0;
@@ -600,8 +609,10 @@ a:hover{
     font-weight: bold;
 }
 /* Footer */
+
 .footer{
-    height: 1000px;
+    padding-bottom: 20px;
+    border-bottom:1px solid #A9A9A9;
 }
 .blog-ft{
     display: flex;
@@ -619,7 +630,7 @@ a:hover{
 }
 .blog-items p{
     font-size: 10px;
-    color:#A9A9A9;
+    color:#000;
 }
 .follow p:nth-child(1){
     font-size: 30px;
@@ -640,9 +651,14 @@ a:hover{
     font-size: 16px;
     font-weight: 600;
 }
-.follow i{
+.follow-us i{
     padding: 0 5px;
     color:#8AE8D4;
+    transition: 200ms all;
+}
+.follow-us i:hover{
+    transform: scale(1.1);
+    -moz-transform: scale(1.5)
 }
 .follow-us{
     margin-bottom: 10px;
@@ -662,4 +678,12 @@ a:hover{
     margin-top: 10px;
     font-size: 12px;
     color: #929292;
+}
+/* Copyright */
+.copyright{
+text-align: center;
+margin: 10px 0;
+}
+.copyright span{
+    color:#F87376;
 }
