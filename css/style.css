@@ -619,6 +619,7 @@ a:hover{
 }
 .blog-items p{
     font-size: 10px;
+    color:#A9A9A9;
 }
 .follow p:nth-child(1){
     font-size: 30px;
@@ -646,10 +647,13 @@ a:hover{
 .follow-us{
     margin-bottom: 10px;
 }
-.follow input{
-    /* width: 150px; */
-    margin: 0;
-    padding: 0;
+.follow button{
+    background-color:#8AE8D4;
+    color:#fff;
+    font-weight: 600;
+}
+.follow button:hover{
+    color: #edb458;
 }
 .instagram img{
     width: 85%;
