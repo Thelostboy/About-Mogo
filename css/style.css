@@ -8,8 +8,18 @@ body {
 ul{
     list-style: none;
 }
+.uppercase{
+    color:#000;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+}
 .small-text{
     color: #A9A9A9;
+    font-size: 12px;
+}
+a:hover{
+    text-decoration: none !important;
 }
 /* Banner-overlay */
 
@@ -521,4 +531,131 @@ ul{
 }
 .people .say p:nth-child(4){
     font-size: 12px;
+}
+/* Latest Blog */
+.blog img{
+    width: 100%;
+}
+.blog .sub{
+    margin-top: 10px;
+}
+.blog i{
+    color:#8AE8D4;
+}
+.blog{
+    position: relative;
+}
+.time{
+    position: absolute;
+    top:105px;
+    left: -10px;
+    background-color: #8AE8D4;
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+}
+.time .date{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 5px;
+}
+.time .month{
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+}
+ /* Map */
+.map{
+    background-image: url(../images/map-bg.png);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 70px 0 50px;
+}
+.map .map-label{
+    color: #F87376;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 45px 0;
+}
+.map::before{
+    content: ' ';
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, .8);
+    width: 100%;
+}
+.map .map-label p{
+    margin: 5px 0 0;
+    font-weight: bold;
+}
+/* Footer */
+.footer{
+    height: 1000px;
+}
+.blog-ft{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start ;
+}
+.blog-ft>*{
+    margin-bottom: 8px;
+}
+.blog-items{
+    display: flex;
+}
+.blog-items img{
+    width: 30%;
+}
+.blog-items p{
+    font-size: 10px;
+}
+.follow p:nth-child(1){
+    font-size: 30px;
+    color:#A9A9A9;
+    font-weight: bold;
+}
+.follow p:nth-child(2){
+    font-size: 13px;
+    color:#9B9B9B;
+    margin: 15px 0;
+}
+.follow p:nth-child(3){
+    font-weight: 500;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #AFAFAF;
+}
+.follow p span:nth-child(1){
+    font-size: 16px;
+    font-weight: 600;
+}
+.follow i{
+    padding: 0 5px;
+    color:#8AE8D4;
+}
+.follow-us{
+    margin-bottom: 10px;
+}
+.follow input{
+    /* width: 150px; */
+    margin: 0;
+    padding: 0;
+}
+.instagram img{
+    width: 85%;
+}
+.instagram a{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #929292;
 }
