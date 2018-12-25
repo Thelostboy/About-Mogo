@@ -381,15 +381,29 @@ a:hover{
     border: 1px solid rgb(218, 212, 212);
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
+    position: relative;
+    transition: 300ms all;
 }
-.services-2-item:focus +.lorem{
-    display: block;
+.services-2-item:hover .lorem{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(10%);
+}
+.services-2-item:hover{
+    padding-bottom: 120px;
 }
 .lorem{
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left:0 ;
     overflow: scroll;
+    max-height: 124px;
     border: 1px solid rgb(219, 212, 212);
     color: rgb(168, 161, 161);
-    display: none;
+    visibility: hidden;
+    opacity:0;
+    transition:  all 300ms linear, visibility 500ms, opacity 300ms;
 }
 .services-2-item p{
     padding: 0;
