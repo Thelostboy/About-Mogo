@@ -28,7 +28,7 @@ a:hover{
     background-position: center;
     background-size: cover;
     background-repeat: none;
-    height: 730px;
+    /* height: 730px; */
     position: relative;
     padding: 0 !important;
 }
@@ -95,13 +95,15 @@ a:hover{
 /* Content */
 
 .content {
-    position: relative;
     margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .content p {
     color: #fff;
-    text-align: center;
 }
 
 .content p:first-child {
@@ -110,7 +112,7 @@ a:hover{
     margin-bottom: 20px;
 }
 
-.content p:nth-child(n+2) {
+.content p:nth-child(n+2):nth-child(-n+3){
     font-size: 110px;
     line-height: 100px;
     font-weight: bold;
@@ -135,12 +137,10 @@ a:hover{
 /* Lear more */
 
 .banner .content a {
-    display: block;
-    margin: 0 350px;
     border: 2px solid #fff;
     background-color: transparent;
     color: #fff;
-    padding: 6px 18px;
+    padding: 6px 18px;  
     text-transform: uppercase;
     font-weight: bold;
     font-size: 12px;
@@ -520,7 +520,7 @@ a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 570px;
+    /* height: 570px; */
     position: relative;
 }
 .people-say::before{
@@ -698,6 +698,7 @@ a:hover{
 text-align: center;
 margin: 10px 0;
 }
-.copyright span{
+.copyright a{
     color:#F87376;
+    cursor: pointer;
 }
