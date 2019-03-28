@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+
+    <!-- Font -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,500,600,700,800" rel="stylesheet">
-    <script src="js/main.js"></script>
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
-        crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -31,25 +34,25 @@
                 <div class="navbar col-lg-8">
                     <ul>
                         <li class="active">
-                            <a href="">About</a>
+                            <a href="#">About</a>
                         </li>
                         <li>
-                            <a href="">Service</a>
+                            <a href="#">Service</a>
                         </li>
                         <li>
-                            <a href="">Work</a>
+                            <a href="#">Work</a>
                         </li>
                         <li>
-                            <a href="">Blog</a>
+                            <a href="#">Blog</a>
                         </li>
                         <li>
-                            <a href="">Contact</a>
+                            <a href="#">Contact</a>
                         </li>
                         <li>
-                            <a href=""><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fas fa-search"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -61,16 +64,16 @@
                 <hr class="underline">
                 <a href="#">Learn More</a>
                 <div class="slide col-lg-16">
-                    <div><span>01</span> Intro</div>
-                    <div><span>02</span> Work</div>
-                    <div><span>03</span> About</div>
-                    <div><span>04</span> Contacts</div>
+                    <a href="#"><span>01</span> Intro</a>
+                    <a href="#work"><span>02</span> Work</a>
+                    <a href="#about-us"><span>03</span> About</a>
+                    <a href="#contact"><span>04</span> Contacts</a>
                 </div>
             </div>
         </div>
         <!-- About us -->
 
-        <div class="about-us col-lg-offset-3 col-lg-10">
+        <div class="about-us col-lg-offset-3 col-lg-10" id="about-us">
             <div class="title ">
                 <p>What we do</p>
                 <p>Story About us</p>
@@ -212,170 +215,80 @@
                     <img src="images/service-2.png" alt="">
                 </div>
                 <div class="col-lg-8 services-2-list">
-                    <div class="services-2-item">
-                        <i class="far fa-image"></i>
-                        <p>Photography</p>
-                        <i class="fas fa-chevron-down"></i>
-                        <div class="lorem">
-                            <p class="small-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iure
-                                libero
-                                officiis nesciunt
-                                repellat tempore, delectus molestias aliquam porro deleniti doloremque ipsum atque
-                                consectetur impedit commodi aut dolore reiciendis! Cumque labore odio assumenda
-                                sapiente
-                                quisquam, dolor iste nisi perspiciatis aperiam dolorum consequatur necessitatibus
-                                fugiat.
-                                Perspiciatis cum quia atque error sint?</p>
+                    <div class="panel-group" id="services-accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading-1" data-toggle="collapse"
+                                data-parent="#services-accordion" href="#item-1-info" aria-expanded="true"
+                                aria-controls="item-1-info">
+                                <i class="far fa-image"></i>
+                                <h4 class="panel-title">
+                                    Photographic
+                                </h4>
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-chevron-up"></i>
+                            </div>
+
+                            <div id="item-1-info" class="panel-collapse collaps in" role="tabpanel"
+                                aria-labelledby="heading-1" aria-expanded="true">
+                                <div class="panel-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, maiores! Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Cum magnam alias illum possimus
+                                    placeat. </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading-2" data-toggle="collapse"
+                                data-parent="#services-accordion" href="#item-2-info" aria-expanded="false"
+                                aria-controls="item-1-info">
+                                <i class="far fa-image"></i>
+                                <h4 class="panel-title">
+                                    Creativity
+                                </h4>
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-chevron-up"></i>
+                            </div>
+
+                            <div id="item-2-info" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="heading-2" aria-expanded="false">
+                                <div class="panel-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, maiores! Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Cum magnam alias illum possimus
+                                    placeat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading-3" data-toggle="collapse"
+                                data-parent="#services-accordion" href="#item-3-info" aria-expanded="false"
+                                aria-controls="item-1-info">
+                                <i class="far fa-image"></i>
+                                <h4 class="panel-title">
+                                    Web Design
+                                </h4>
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-chevron-up"></i>
+                            </div>
+
+                            <div id="item-3-info" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="heading-3" aria-expanded="false">
+                                <div class="panel-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, maiores! Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Cum magnam alias illum possimus
+                                    placeat. </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="services-2-item">
-                        <i class="far fa-image"></i>
-                        <p>Creativity</p>
-                        <i class="fas fa-chevron-down"></i>
-                        <div class="lorem">
-                            <p class="small-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iure
-                                libero
-                                officiis nesciunt
-                                repellat tempore, delectus molestias aliquam porro deleniti doloremque ipsum atque
-                                consectetur impedit commodi aut dolore reiciendis! Cumque labore odio assumenda
-                                sapiente
-                                quisquam, dolor iste nisi perspiciatis aperiam dolorum consequatur necessitatibus
-                                fugiat.
-                                Perspiciatis cum quia atque error sint?</p>
-                        </div>
-                    </div>
-                    <div class="services-2-item">
-                        <i class="far fa-image"></i>
-                        <p>web design</p>
-                        <i class="fas fa-chevron-down"></i>
-                        <div class="lorem">
-                            <p class="small-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iure
-                                libero
-                                officiis nesciunt
-                                repellat tempore, delectus molestias aliquam porro deleniti doloremque ipsum atque
-                                consectetur impedit commodi aut dolore reiciendis! Cumque labore odio assumenda
-                                sapiente
-                                quisquam, dolor iste nisi perspiciatis aperiam dolorum consequatur necessitatibus
-                                fugiat.
-                                Perspiciatis cum quia atque error sint?</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Quote -->
-        <div class="quote col-lg-16">
-            <div class="col-lg-offset-3 col-lg-10 quote-content">
-                <i class="fas fa-chevron-left"></i>
-                <div class="quote-item">
-                    <img src="images/quote-icon.png" alt="">
-                    <div class="content-left">
-                        <p class="small-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, sapiente
-                            dolorem! Laborum
-                            eaque aperiam nihil earum! Praesentium esse doloremque autem dicta quaerat libero earum
-                            ullam, repudiandae ducimus voluptatibus molestiae unde?</p>
-                        <hr class="underline-color">
-                        <p>Jon Doe</p>
-                    </div>
-                </div>
-                <i class="fas fa-chevron-right"></i>
-            </div>
-        </div>
-
-        <!-- Out team -->
-        <div class="our-team col-lg-offset-3 col-lg-10">
-            <div class="title">
-                <p>Who we are</p>
-                <p>meet our team</p>
-                <hr class="underline-color">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos saepe porro rem, quod magnam mollitia
-                    rerum voluptatem ipsam excepturi eligendi.</p>
-            </div>
-            <div class="picture">
-                <div class="card">
-                    <div class="social">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-pinterest-p"></i>
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                    <img src="images/player-1.png" alt="">
-                </div>
-                <div class="card">
-                    <div class="social">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-pinterest-p"></i>
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                    <img src="images/player-2.png" alt="">
-                </div>
-                <div class="card">
-                    <div class="social">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-pinterest-p"></i>
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                    <img src="images/player-3.png" alt="">
-                </div>
-            </div>
-            <div class="info">
-                <div class="player">
-                    <p>Matthew DIX</p>
-                    <p>Graphic Design</p>
-                </div>
-                <div class="player">
-                    <p>Chirisopher Cambell</p>
-                    <p>Branding UX Design</p>
-                </div>
-                <div class="player">
-                    <p>Michael Fertig</p>
-                    <p>Developer</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Logo Group -->
-        <div class="logo-group col-lg-16">
-            <div class="logo-group-list col-lg-offset-3 col-lg-10">
-            </div>
-        </div>
-
-        <!-- Work -->
-        <div class="work col-lg-16">
-            <div class="title col-lg-offset-3 col-lg-10">
-                <p>What we do</p>
-                <p>Some of our work</p>
-                <hr class="underline-color">
-                <p class="small-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem delectus, labore est
-                    a quibusdam debitis libero. Sequi ducimus perferendis voluptatum illum velit dignissimos expedita
-                    numquam ipsa eum tempore!</p>
-            </div>
-            <div class="col-lg-4 work-pic">
-                <img src="images/work-1.png" alt="">
-                <img src="images/work-2.png" alt="">
-            </div>
-            <div class="col-lg-4 work-pic">
-                <img src="images/work-3.png" alt="">
-                <img src="images/work-4.png" alt="">
-            </div>
-            <div class="col-lg-4 work-pic">
-                <img src="images/work-5.png" alt="">
-            </div>
-            <div class="col-lg-4 work-pic">
-                <img src="images/work-6.png" alt="">
-                <img src="images/work-7.png" alt="">
-            </div>
-        </div>
-
-        <!-- Testimonial -->
-        <div class="testimonial quote-content col-lg-offset-3 col-lg-10">
+    <!-- Quote -->
+    <div class="quote col-lg-16">
+        <div class="col-lg-offset-3 col-lg-10 quote-content">
             <i class="fas fa-chevron-left"></i>
             <div class="quote-item">
-                <img src="images/ava-testimonial.png" alt="">
+                <img src="images/quote-icon.png" alt="">
                 <div class="content-left">
                     <p class="small-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, sapiente
                         dolorem! Laborum
@@ -387,175 +300,284 @@
             </div>
             <i class="fas fa-chevron-right"></i>
         </div>
-        <div class="people-say col-lg-16">
-            <div class="title">
-                <p>Happy Clients</p>
-                <p>What people say</p>
-                <hr class="underline-color">
-            </div>
-            <div class="col-lg-offset-3 col-lg-10">
-                <div class="people-list col-lg-8">
-                    <div class="people">
-                        <img src="images/people-1.png" alt="">
-                        <div class="say">
-                            <p>mathew dix</p>
-                            <p>Graphic Design</p>
-                            <hr class="underline-color">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nostrum?</p>
-                        </div>
-                    </div>
-                    <div class="people">
-                        <img src="images/people-2.png" alt="">
-                        <div class="say">
-                            <p>jaelynn castillo</p>
-                            <p>Graphic Design</p>
-                            <hr class="underline-color">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nostrum?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="people-list col-lg-8">
-                    <div class="people">
-                        <img src="images/people-3.png" alt="">
-                        <div class="say">
-                            <p>nick karvounis</p>
-                            <p>Graphic Design</p>
-                            <hr class="underline-color">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nostrum?</p>
-                        </div>
-                    </div>
-                    <div class="people">
-                        <img src="images/people-4.png" alt="">
-                        <div class="say">
-                            <p>Mike petrucci</p>
-                            <p>Graphic Design</p>
-                            <hr class="underline-color">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nostrum?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
 
-        <!-- Latest Blog -->
-        <div class="latest-blog col-lg-offset-3 col-lg-10 mb-5">
-            <div class="title">
-                <p>Our stories</p>
-                <p>Latest blog</p>
-                <hr class="underline-color">
-            </div>
-            <div class="picture col-lg-16">
-                <a href="" class="blog">
-                    <img src="images/blog-1.png" alt="">
-                    <div class="sub">
-                        <p class="uppercase">Lorem ipsum dolor sit amet.</p>
-                        <p class="small-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
-                            laborum.</p>
-                        <i class="fas fa-eye"></i> <span class="small-text">100</span> &nbsp;
-                        <i class="fas fa-comment-dots"></i> <span class="small-text">200</span>
-                    </div>
-                    <div class="time">
-                        <span class="date">15</span>
-                        <span class="month">June</span>
-                    </div>
-                </a>
-                <a href="#" class="blog">
-                    <img src="images/blog-2.png" alt="">
-                    <div class="sub">
-                        <p class="uppercase">Lorem ipsum dolor sit amet.</p>
-                        <p class="small-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
-                            laborum.</p>
-                        <i class="fas fa-eye"></i> <span class="small-text">100</span> &nbsp;
-                        <i class="fas fa-comment-dots"></i> <span class="small-text">200</span>
-                    </div>
-                    <div class="time">
-                        <span class="date">15</span>
-                        <span class="month">June</span>
-                    </div>
-                </a>
-                <a href="#" class="blog">
-                    <img src="images/blog-3.png" alt="">
-                    <div class="sub">
-                        <p class="uppercase">Lorem ipsum dolor sit amet.</p>
-                        <p class="small-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
-                            laborum.</p>
-                        <i class="fas fa-eye"></i> <span class="small-text">100</span> &nbsp;
-                        <i class="fas fa-comment-dots"></i> <span class="small-text">200</span>
-                    </div>
-                    <div class="time">
-                        <span class="date">15</span>
-                        <span class="month">June</span>
-                    </div>
-                </a>
-            </div>
+    <!-- Out team -->
+    <div class="our-team col-lg-offset-3 col-lg-10">
+        <div class="title">
+            <p>Who we are</p>
+            <p>meet our team</p>
+            <hr class="underline-color">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos saepe porro rem, quod magnam mollitia
+                rerum voluptatem ipsam excepturi eligendi.</p>
         </div>
-        <div class="map col-lg-16">
-            <div class="map-label col-lg-16">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>OPEN MAP</p>
-                <hr class="underline-color">
-            </div>
-        </div>
-        <!-- Footer -->
-        <div class="footer col-lg-offset-3 col-lg-10">
-            <div class="follow col-lg-6">
-                <p>MoGo</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.Incidunt dolorem
-                    cupiditate vero!</p>
-                <p><span>15k</span> follower</p>
-                <div class="follow-us">
-                    <span class="small-text">Follow Us: </span>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"> <i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+        <div class="picture">
+            <div class="card">
+                <div class="social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-instagram"></i>
                 </div>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Your Mail">
-                    <div class="input-group-btn">
-                        <button class="btn" type="submit">SUBSCRIBE</button>
-                    </div>
+                <img src="images/player-1.png" alt="">
+            </div>
+            <div class="card">
+                <div class="social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-instagram"></i>
                 </div>
+                <img src="images/player-2.png" alt="">
             </div>
-            <div class="blog-ft col-lg-5">
-                <p class="uppercase">Blog</p>
-                <a href="#" class="blog-items">
-                    <img src="images/ft-blog-1.png" alt="">
-                    <div class="sub">
-                        <p class="uppercase">Lorem, ipsum dolor sit amet </p>
-                        <p class="small-text">1st June</p>
-                    </div>
-                </a>
-                <a href="" class="blog-items">
-                    <img src="images/ft-blog-2.png" alt="">
-                    <div class="sub">
-                        <p class="uppercase">Lorem, ipsum dolor sit amet </p>
-                        <p class="small-text">1st June</p>
-                    </div>
-                </a>
-                <a href="" class="blog-items">
-                    <img src="images/ft-blog-3.png" alt="">
-                    <div class="sub">
-                        <p class="uppercase">Lorem, ipsum dolor sit amet </p>
-                        <p class="small-text">1st June</p>
-                    </div>
-                </a>
-            </div>
-            <div class="instagram col-lg-5">
-                <p class="uppercase">Instagram</p>
-                <img src="images/insta.png" alt="">
-                <p><a href="#">View more photos</a></p>
+            <div class="card">
+                <div class="social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <img src="images/player-3.png" alt="">
             </div>
         </div>
-        <div class="copyright col-lg-16">
-            <p>
-                <i class="far fa-copyright"></i>
-                2016 Mogo Template free by <a>Nguyen Duy Quang</a>
-            </p>
+        <div class="info">
+            <div class="player">
+                <p>Matthew DIX</p>
+                <p>Graphic Design</p>
+            </div>
+            <div class="player">
+                <p>Chirisopher Cambell</p>
+                <p>Branding UX Design</p>
+            </div>
+            <div class="player">
+                <p>Michael Fertig</p>
+                <p>Developer</p>
+            </div>
         </div>
     </div>
-    
+
+    <!-- Logo Group -->
+    <div class="logo-group col-lg-16">
+        <div class="logo-group-list col-lg-offset-3 col-lg-10">
+        </div>
+    </div>
+
+    <!-- Work -->
+    <div class="work col-lg-16" id="work">
+        <div class="title col-lg-offset-3 col-lg-10">
+            <p>What we do</p>
+            <p>Some of our work</p>
+            <hr class="underline-color">
+            <p class="small-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem delectus, labore est
+                a quibusdam debitis libero. Sequi ducimus perferendis voluptatum illum velit dignissimos expedita
+                numquam ipsa eum tempore!</p>
+        </div>
+        <div class="col-lg-4 work-pic">
+            <img src="images/work-1.png" alt="">
+            <img src="images/work-2.png" alt="">
+        </div>
+        <div class="col-lg-4 work-pic">
+            <img src="images/work-3.png" alt="">
+            <img src="images/work-4.png" alt="">
+        </div>
+        <div class="col-lg-4 work-pic">
+            <img src="images/work-5.png" alt="">
+        </div>
+        <div class="col-lg-4 work-pic">
+            <img src="images/work-6.png" alt="">
+            <img src="images/work-7.png" alt="">
+        </div>
+    </div>
+
+    <!-- Testimonial -->
+    <div class="testimonial quote-content col-lg-offset-3 col-lg-10">
+        <i class="fas fa-chevron-left"></i>
+        <div class="quote-item">
+            <img src="images/ava-testimonial.png" alt="">
+            <div class="content-left">
+                <p class="small-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, sapiente
+                    dolorem! Laborum
+                    eaque aperiam nihil earum! Praesentium esse doloremque autem dicta quaerat libero earum
+                    ullam, repudiandae ducimus voluptatibus molestiae unde?</p>
+                <hr class="underline-color">
+                <p>Jon Doe</p>
+            </div>
+        </div>
+        <i class="fas fa-chevron-right"></i>
+    </div>
+    <div class="people-say col-lg-16">
+        <div class="title">
+            <p>Happy Clients</p>
+            <p>What people say</p>
+            <hr class="underline-color">
+        </div>
+        <div class="col-lg-offset-3 col-lg-10">
+            <div class="people-list col-lg-8">
+                <div class="people">
+                    <img src="images/people-1.png" alt="">
+                    <div class="say">
+                        <p>mathew dix</p>
+                        <p>Graphic Design</p>
+                        <hr class="underline-color">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nostrum?</p>
+                    </div>
+                </div>
+                <div class="people">
+                    <img src="images/people-2.png" alt="">
+                    <div class="say">
+                        <p>jaelynn castillo</p>
+                        <p>Graphic Design</p>
+                        <hr class="underline-color">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nostrum?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="people-list col-lg-8">
+                <div class="people">
+                    <img src="images/people-3.png" alt="">
+                    <div class="say">
+                        <p>nick karvounis</p>
+                        <p>Graphic Design</p>
+                        <hr class="underline-color">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nostrum?</p>
+                    </div>
+                </div>
+                <div class="people">
+                    <img src="images/people-4.png" alt="">
+                    <div class="say">
+                        <p>Mike petrucci</p>
+                        <p>Graphic Design</p>
+                        <hr class="underline-color">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nostrum?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Latest Blog -->
+    <div class="latest-blog col-lg-offset-3 col-lg-10 mb-5">
+        <div class="title">
+            <p>Our stories</p>
+            <p>Latest blog</p>
+            <hr class="underline-color">
+        </div>
+        <div class="picture col-lg-16">
+            <a href="#" class="blog">
+                <img src="images/blog-1.png" alt="">
+                <div class="sub">
+                    <p class="uppercase">Lorem ipsum dolor sit amet.</p>
+                    <p class="small-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
+                        laborum.</p>
+                    <i class="fas fa-eye"></i> <span class="small-text">100</span> &nbsp;
+                    <i class="fas fa-comment-dots"></i> <span class="small-text">200</span>
+                </div>
+                <div class="time">
+                    <span class="date">15</span>
+                    <span class="month">June</span>
+                </div>
+            </a>
+            <a href="#" class="blog">
+                <img src="images/blog-2.png" alt="">
+                <div class="sub">
+                    <p class="uppercase">Lorem ipsum dolor sit amet.</p>
+                    <p class="small-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
+                        laborum.</p>
+                    <i class="fas fa-eye"></i> <span class="small-text">100</span> &nbsp;
+                    <i class="fas fa-comment-dots"></i> <span class="small-text">200</span>
+                </div>
+                <div class="time">
+                    <span class="date">15</span>
+                    <span class="month">June</span>
+                </div>
+            </a>
+            <a href="#" class="blog">
+                <img src="images/blog-3.png" alt="">
+                <div class="sub">
+                    <p class="uppercase">Lorem ipsum dolor sit amet.</p>
+                    <p class="small-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
+                        laborum.</p>
+                    <i class="fas fa-eye"></i> <span class="small-text">100</span> &nbsp;
+                    <i class="fas fa-comment-dots"></i> <span class="small-text">200</span>
+                </div>
+                <div class="time">
+                    <span class="date">15</span>
+                    <span class="month">June</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="map col-lg-16">
+        <div class="map-label col-lg-16">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>OPEN MAP</p>
+            <hr class="underline-color">
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer col-lg-offset-3 col-lg-10" id="contact">
+        <div class="follow col-lg-6">
+            <p>MoGo</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.Incidunt dolorem
+                cupiditate vero!</p>
+            <p><span>15k</span> follower</p>
+            <div class="follow-us">
+                <span class="small-text">Follow Us: </span>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"> <i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Your Mail">
+                <div class="input-group-btn">
+                    <button class="btn" type="submit">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <div class="blog-ft col-lg-5">
+            <p class="uppercase">Blog</p>
+            <a href="#" class="blog-items">
+                <img src="images/ft-blog-1.png" alt="">
+                <div class="sub">
+                    <p class="uppercase">Lorem, ipsum dolor sit amet </p>
+                    <p class="small-text">1st June</p>
+                </div>
+            </a>
+            <a href="#" class="blog-items">
+                <img src="images/ft-blog-2.png" alt="">
+                <div class="sub">
+                    <p class="uppercase">Lorem, ipsum dolor sit amet </p>
+                    <p class="small-text">1st June</p>
+                </div>
+            </a>
+            <a href="#" class="blog-items">
+                <img src="images/ft-blog-3.png" alt="">
+                <div class="sub">
+                    <p class="uppercase">Lorem, ipsum dolor sit amet </p>
+                    <p class="small-text">1st June</p>
+                </div>
+            </a>
+        </div>
+        <div class="instagram col-lg-5">
+            <p class="uppercase">Instagram</p>
+            <img src="images/insta.png" alt="">
+            <p><a href="#">View more photos</a></p>
+        </div>
+    </div>
+    <div class="copyright col-lg-16">
+        <p>
+            <i class="far fa-copyright"></i>
+            2019 Mogo Template free by <a>Nguyen Duy Quang</a>
+        </p>
+    </div>
+    </div>
+
+
+
+    <script language="javascript" src="js/main.js"></script>
+
 </body>
 
 </html>
